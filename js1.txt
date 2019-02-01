@@ -1,0 +1,28 @@
+
+<script>
+ var dataArray= new Array("new","year","xyz","yeaaaa","newyear","xyzyeaaaa");
+ var test=new Array();   
+for(var i=0;i<dataArray.length;i++){
+    
+	var aaa=dataArray[i] + dataArray[i+1];
+     test.push(aaa);
+    }
+   
+function getMatch(a, b) {
+    var matches = [];
+
+    for ( var i = 0; i < a.length; i++ ) {
+        for ( var e = 0; e < b.length; e++ ) {
+            if ( a[i] === b[e] ) matches.push( a[i] );
+        }
+    }
+    document.write(matches);
+}
+
+getMatch(dataArray, test); // ["cat"]
+
+
+
+
+</script>
+
